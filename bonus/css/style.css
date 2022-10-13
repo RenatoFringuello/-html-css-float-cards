@@ -1,0 +1,148 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Fredoka', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#4cc2f4;
+}
+a:hover{
+    color:#d0f57a;
+}
+a:visited{
+    color:#b07af5;
+}
+a:active{
+    color:#4c87f4;
+}
+
+/* ------------------------------- HEADER ------------------------------ */
+header{
+    text-align: center;
+}
+h1{
+    padding: 2rem 0;
+}
+.title{
+    color:#e53170;
+}
+.subtitle{
+    color: white;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.fredokaOne{
+    font-family: 'Fredoka One', sans-serif;
+}
+
+/* ------------------------------- MAIN ------------------------------ */
+main{
+    min-height: 70vh;
+}
+.container{
+    margin: 0 auto;
+    width: 70%;
+}
+
+.card{
+    background-color: #0f0e17;
+    color:white;
+    box-shadow: 0 0 10px 0.1rem #0008;
+    margin:2.9rem 0.9rem 0;
+    width: calc(100% / 3 - 1.8rem);
+}
+.card > img{
+    height: 5.5rem;
+    margin-right: 1rem;
+    transition: all 0.5s ease-in-out;
+}
+.contact-info{
+    padding: 0.5rem 0;
+    text-align: start;
+}
+.contact-info *{
+    margin: 0.3rem 0;
+    font-size: 0.9rem;
+}
+
+.float-left{
+    float: left;
+}
+.float-right{
+    float: right;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* ------------------------------- FOOTER ------------------------------ */
+footer{
+    background-color: #0f0e17;
+    color:#9f8e76;
+    padding: 3rem;
+    height: 18rem;
+}
+footer section{
+    width: calc(100% / 3);
+    height: 100%;
+}
+footer section:nth-child(2){
+    border-left:1px solid;
+    border-right:1px solid;
+    text-align: center;
+}
+footer section:last-child{
+    text-align: end;
+}
+.logo{
+    font-size: 2rem;
+    padding-top: 0;
+}
+/* credits */
+#credits{
+    font-size: 0.7rem;
+}
+#credits .img-box{
+    display: inline-block;
+}
+#credits .img-box a{
+    margin: 2rem 1rem;
+    position: relative;
+    color: #9f8e76;
+
+}
+#credits .img-box .newTab{
+    position: absolute;
+    width: 0.5rem;
+    height: 0.5rem;
+    top:-0.3rem;
+    right: -0.3rem;
+    border-top: 1px solid;
+    border-right: 1px solid;
+}
+
+#credits .img-box img{
+    height: 2rem;
+    vertical-align: middle;
+    /* first two convert everything to black; see this pen "https://codepen.io/sosuke/pen/Pjoqqp" for more */
+    filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(2367%) hue-rotate(356deg) brightness(92%) contrast(89%);
+}
+#credits .img-box a:hover {
+    color:#c2b299;
+    filter: brightness(0) saturate(100%) invert(78%) sepia(7%) saturate(649%) hue-rotate(356deg) brightness(91%) contrast(86%);
+}
+
+/* partners */
+#partners .img-box img{
+    height: 3.2rem;
+    margin: 0 .5rem 1rem;
+    -webkit-filter: invert(1);
+}
