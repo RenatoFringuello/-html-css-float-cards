@@ -44,6 +44,7 @@ h1{
 /* ------------------------------- MAIN ------------------------------ */
 main{
     min-height: 70vh;
+    padding-bottom: 3rem;
 }
 .container{
     margin: 0 auto;
@@ -56,6 +57,7 @@ main{
     box-shadow: 0 0 10px 0.1rem #0008;
     margin:2.9rem 0.9rem 0;
     width: calc(100% / 3 - 1.8rem);
+    min-width: 19rem;
 }
 .card > img{
     height: 5.5rem;
@@ -85,25 +87,25 @@ main{
 
 /* ------------------------------- FOOTER ------------------------------ */
 footer{
-    background-color: #0f0e17;
+    background-color: #000;
     color:#9f8e76;
     padding: 3rem;
-    height: 18rem;
 }
 footer section{
     width: calc(100% / 3);
     height: 100%;
 }
 footer section:nth-child(2){
+    min-height: 13rem;
     border-left:1px solid;
-    border-right:1px solid;
     text-align: center;
 }
 footer section:last-child{
+    border-left:1px solid;
     text-align: end;
 }
 .logo{
-    font-size: 2rem;
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
     padding-top: 0;
 }
 /* credits */
@@ -130,19 +132,23 @@ footer section:last-child{
 }
 
 #credits .img-box img{
-    height: 2rem;
+    height: 4vw;
+    max-height: 2rem;
     vertical-align: middle;
     /* first two convert everything to black; see this pen "https://codepen.io/sosuke/pen/Pjoqqp" for more */
     filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(2367%) hue-rotate(356deg) brightness(92%) contrast(89%);
+    -webkit-filter: brightness(0) saturate(100%) invert(62%) sepia(3%) saturate(2367%) hue-rotate(356deg) brightness(92%) contrast(89%);
 }
 #credits .img-box a:hover {
     color:#c2b299;
     filter: brightness(0) saturate(100%) invert(78%) sepia(7%) saturate(649%) hue-rotate(356deg) brightness(91%) contrast(86%);
+    -webkit-filter: brightness(0) saturate(100%) invert(78%) sepia(7%) saturate(649%) hue-rotate(356deg) brightness(91%) contrast(86%);
 }
 
 /* partners */
 #partners .img-box img{
-    height: 3.2rem;
+    height: 6vw;
+    max-height: 3.2rem;
     margin: 0 .5rem 1rem;
     -webkit-filter: invert(1);
 }
