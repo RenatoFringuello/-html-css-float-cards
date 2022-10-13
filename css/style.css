@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-.clearfix::after{
-    content: '';
-    display: table;
-    clear: both;
-}
 body{
     font-family: 'Fredoka', sans-serif;
 }
@@ -16,7 +11,17 @@ a{
     text-decoration: none;
     color:#4cc2f4;
 }
+a:hover{
+    color:#d0f57a;
+}
+a:visited{
+    color:#b07af5;
+}
+a:active{
+    color:#4c87f4;
+}
 
+/* ------------------------------- HEADER ------------------------------ */
 header{
     text-align: center;
 }
@@ -24,37 +29,27 @@ header > h1{
     padding: 2rem 0;
     color:#e53170;
 }
-
-article{
-    background-color: #0f0e17;
-    color:white;
-    box-shadow: 0 0 10px 0.1rem #0008;
-    margin:2.9rem 1.8rem 0;
-    width: calc(100% / 3 - 1.2rem);
-}
-article > img{
-    height: 5.5rem;
-    margin-right: 1rem;
+.fredokaOne{
+    font-family: 'Fredoka One', sans-serif;
 }
 
-section.container article:nth-child(3n),
-section.container article:nth-child(3n + 1){
-    margin: 2.9rem 0 0;
-}
-
+/* ------------------------------- MAIN ------------------------------ */
 .container{
     margin: 0 auto;
     width: 70%;
 }
 
-.float-left{
-    float: left;
+.card{
+    background-color: #0f0e17;
+    color:white;
+    box-shadow: 0 0 10px 0.1rem #0008;
+    margin:2.9rem 0.9rem 0;
+    width: calc(100% / 3 - 1.8rem);
 }
-
-.fredoka{
-    font-family: 'Fredoka One', sans-serif;
+.card > img{
+    height: 5.5rem;
+    margin-right: 1rem;
 }
-
 .contact-info{
     padding: 0.5rem 0;
     text-align: start;
@@ -62,4 +57,13 @@ section.container article:nth-child(3n + 1){
 .contact-info *{
     margin: 0.3rem 0;
     font-size: 0.9rem;
+}
+
+.float-left{
+    float: left;
+}
+.clearfix::after{
+    content: '';
+    display: table;
+    clear: both;
 }
