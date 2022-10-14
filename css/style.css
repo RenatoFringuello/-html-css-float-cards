@@ -26,6 +26,7 @@ header{
     text-align: center;
 }
 header > h1{
+    /* meglio con il margin */
     padding: 2rem 0;
     color:#e53170;
 }
