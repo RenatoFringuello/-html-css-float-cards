@@ -45,6 +45,7 @@ header > h1{
     box-shadow: 0 0 10px 0.1rem #0008;
     margin:2.9rem 0.9rem 0;
     width: calc(100% / 3 - 1.8rem);
+    min-width: 19rem;
 }
 .card > img{
     height: 5.5rem;
